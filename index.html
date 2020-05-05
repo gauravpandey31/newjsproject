@@ -1,1 +1,21 @@
-<div id="app"></div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Measure</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+    </head>
+  <body>
+    <div id="map" class="map"></div>
+    <form class="form-inline">
+      <label>Measurement type &nbsp;</label>
+      <select id="type">
+        <option value="length">Length (LineString)</option>
+        <option value="area">Area (Polygon)</option>
+      </select>
+    </form>
+  </body>
+</html>
